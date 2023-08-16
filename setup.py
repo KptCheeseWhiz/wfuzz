@@ -24,16 +24,14 @@ dev_requires = [
     'netaddr',  # tests/api/test_payload.py uses ipranges payload
     'pip-tools',
     'flake8==3.8.3',
-    'black==19.10b0;python_version>"3.5"',
+    'black==19.10b0',
     'pytest',
 ]
 
 install_requires = [
     'pycurl',
-    'pyparsing<2.4.2;python_version<="3.4"',
-    'pyparsing>=2.4*;python_version>="3.5"',
+    'pyparsing>=2.4',
     'six',
-    'configparser;python_version<"3.5"',
     'chardet',
 ]
 
@@ -73,14 +71,12 @@ try:
             'dev': dev_requires,
             'docs': docs_requires,
         },
-        python_requires=">=2.6",
+        python_requires=">=3.5",
         classifiers=(
             'Development Status :: 4 - Beta',
             'Natural Language :: English',
             'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',
             'Programming Language :: Python',
-            'Programming Language :: Python :: 3',
-            'Programming Language :: Python :: 3.4',
             'Programming Language :: Python :: 3.5',
             'Programming Language :: Python :: 3.6',
             'Programming Language :: Python :: 3.7',
